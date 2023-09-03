@@ -67,3 +67,7 @@ a {
 .emojis {
   font-size: 80px;
 }
+.code-link {
+  position: relative;
+  left: 100px;
+}
