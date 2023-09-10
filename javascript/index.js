@@ -61,12 +61,6 @@ function submit(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
-// function locationSearch(position) {
-//let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-//let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitutde}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-
-//axios.get(apiUrl).then(weatherCondition);
-//}
 
 let dateTime = document.querySelector("#date-time");
 let currentTime = new Date();
@@ -74,7 +68,5 @@ dateTime.innerHTML = formatDate(currentTime);
 
 let form = document.querySelector("#search-bar");
 form.addEventListener("submit", submit);
-
-// navigator.geolocation.getCurrentPosition(locationSearch);
 
 searchCity("Las Vegas");
