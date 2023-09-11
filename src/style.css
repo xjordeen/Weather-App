@@ -41,6 +41,10 @@ h2 {
   font-size: 70px;
   font-weight: 400;
 }
+h2 .active {
+  color: rgb(0, 0, 0, 0.6);
+  cursor: default;
+}
 h6 {
   font-weight: 300;
 }
