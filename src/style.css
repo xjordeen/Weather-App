@@ -64,11 +64,11 @@ ul {
 a {
   text-decoration: none;
 }
-.forecast {
-  text-align: center;
-}
 .forecast-date {
   margin-bottom: -30px;
+}
+.forecast {
+  text-align: center;
 }
 .code-link {
   position: relative;

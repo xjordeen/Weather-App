@@ -43,6 +43,45 @@ function formatDate(timestamp) {
   <br/> ${currentMonth} ${currentDate}, ${currentYear}
   <br/>`;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `     
+    <div class="col">
+      <div class="forecast-date">${day}</div>
+        <br />
+         <img
+         src="https://openweathermap.org/img/wn/10d@2x.png"
+         alt=""
+         width="85"
+          />
+        <br />
+        <div class="forecast-temps">
+         <span class="max-temp">106°</span> |
+         <span class="min-temp">84°</span>
+      </div>
+    </div>
+    `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function weatherCondition(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#today-temp");
@@ -110,3 +149,4 @@ let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsius);
 
 searchCity("Las Vegas");
+displayForecast();
