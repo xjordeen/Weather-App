@@ -61,15 +61,14 @@ ul {
   position: relative;
   left: -65px;
 }
-p {
-  text-align: center;
-  font-weight: 200;
-}
 a {
   text-decoration: none;
 }
-.emojis {
-  font-size: 80px;
+.forecast {
+  text-align: center;
+}
+.forecast-date {
+  margin-bottom: -30px;
 }
 .code-link {
   position: relative;
