@@ -87,10 +87,9 @@ function displayForecast(response) {
         <div class="forecast-temps">
          <span class="max-temp">${Math.round(
            forecastDay.temperature.maximum
-         )}°</span> |
-         <span class="min-temp">${Math.round(
-           forecastDay.temperature.minimum
-         )}°</span>
+         )}°</span> <span class="min-temp">| ${Math.round(
+          forecastDay.temperature.minimum
+        )}°</span>
       </div>
     </div>
     `;
@@ -124,6 +123,7 @@ function weatherCondition(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemp);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelslikeElement.innerHTML = Math.round(response.data.temperature.feels_like);

@@ -1,4 +1,6 @@
 .card {
+  max-width: 900px;
+  min-width: 900px;
   margin: 50px 100px;
   padding: 20px;
   background: linear-gradient(
@@ -47,19 +49,19 @@ h2 .active {
 }
 h6 {
   font-weight: 300;
+  text-transform: capitalize;
 }
 small {
   position: relative;
   bottom: 50px;
-  font-size: 15px;
+  font-size: 14px;
 }
 ul {
+  position: relative;
+  left: -85px;
   list-style: none;
-  padding: 0 0 20px 0;
   font-size: 12px;
   color: rgb(0, 0, 0, 0.6);
-  position: relative;
-  left: -65px;
 }
 a {
   text-decoration: none;
@@ -73,4 +75,7 @@ a {
 .code-link {
   position: relative;
   left: 100px;
+}
+.min-temp {
+  opacity: 0.5;
 }
